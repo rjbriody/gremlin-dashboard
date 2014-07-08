@@ -1,15 +1,33 @@
 Gremlin Dashboard
 =========
 
+**Prerequisites:**
 
-*** Getting Started:***
+- Java 8
 
-Start gremlin-server on localhost w/ default port:
-```sh
-cd tinkerpop4
-./bin/gremlin-server.sh
-```
 
-... and open gremlin-dashboard/index.html in your browser
+**Getting Started:**
 
-i.e. file:///home/username/gremlin-dashboard/index.html
+- Get & build TinkerPop3
+ ```sh
+ git clone https://github.com/tinkerpop/tinkerpop3.git
+ cd tinkerpop3
+ mvn install -DskipTests
+ ```
+ 
+- Start gremlin-server on localhost w/ default port:
+ ```sh
+ ./bin/gremlin-server.sh
+ ```
+- clone gremlin-dashboard
+ ```sh
+  git clone https://github.com/rjbriody/gremlin-dashboard.git
+  ```
+- Open gremlin-dashboard/index.html in your browser
+
+**Notes:** 
+
+- This is a very basic prototype. 
+- There is almost no styling or eye candy yet. T
+- The JSON Results are real but the graph is randomly generated.
+- The session is not yet maintained across calls. Every execution must declare everything it will use (i.e. create a graph before playing w/ it.)
