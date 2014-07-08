@@ -9,6 +9,7 @@ Gremlin Dashboard
 **Getting Started:**
 
 - Get & build TinkerPop3
+
  ```sh
  git clone https://github.com/tinkerpop/tinkerpop3.git
  cd tinkerpop3
@@ -16,10 +17,12 @@ Gremlin Dashboard
  ```
  
 - Start gremlin-server on localhost w/ default port:
+
  ```sh
  ./bin/gremlin-server.sh
  ```
 - clone gremlin-dashboard
+
  ```sh
   git clone https://github.com/rjbriody/gremlin-dashboard.git
   ```
