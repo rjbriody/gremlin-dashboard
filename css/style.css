@@ -1,0 +1,21 @@
+sigma-graph {
+    width: 800px;
+    height: 800px;
+    display: inline-block;
+    border: solid 1px black;
+    margin: 10px;
+}
+
+#gremlinform {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+#results {
+    width: 400px;
+    float: left;
+}
+

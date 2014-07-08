@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gremlin Dashboard</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.14/angular.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="vendor/gremlin.js"></script>
+    <script src="vendor/sigmajs/sigma.min.js"></script>
+    <script src="vendor/sigmajs/plugins/sigma.parsers.json.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="gremlin-dashboard.js"></script>
+</head>
+
+<body ng-app="GremlinDashboard">
+
+<div ng-controller="GremlinReplController">
+
+    <div id="gremlinform">
+        <form ng-submit="submit()">
+            <input type="text" ng-model="gScript" name="gScript"/>
+        </form>
+    </div>
+
+    <div id="main" ng-show="res">
+        <!--initialize the sigmaGraph directive. pass shared.g in as the graph object.-->
+        <sigma-graph g="shared.g"></sigma-graph>
+
+        <div id="results">
+            <h2>Results:</h2>
+            <pre>{{res}}</pre>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
