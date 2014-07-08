@@ -26,7 +26,8 @@ Gremlin Dashboard
  ```sh
   git clone https://github.com/rjbriody/gremlin-dashboard.git
   ```
-- Open gremlin-dashboard/index.html in your browser
+- Open gremlin-dashboard/index.html in your browser.
+- Place the cursor in the text input box and press enter, or compose your own gremlin awesomeness.
 
 **Notes:** 
 
