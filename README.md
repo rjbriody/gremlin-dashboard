@@ -31,6 +31,6 @@ Gremlin Dashboard
 **Notes:** 
 
 - This is a very basic prototype. 
-- There is almost no styling or eye candy yet. T
+- There is almost no styling or eye candy yet.
 - The JSON Results are real but the graph is randomly generated.
 - The session is not yet maintained across calls. Every execution must declare everything it will use (i.e. create a graph before playing w/ it.)
