@@ -1,6 +1,14 @@
 Gremlin Dashboard
 =========
 
+**Notes:** 
+
+- **The session is not yet maintained across submissions. Every execution must declare everything it will use (i.e. create a graph before playing w/ it.)**
+- This is a very basic prototype. 
+- There is almost no styling or eye candy yet.
+- The JSON Results are real but the graph display is randomly generated.
+
+
 **Prerequisites:**
 
 - Java 8
@@ -28,12 +36,5 @@ Gremlin Dashboard
   ```
 - Open gremlin-dashboard/index.html in your browser.
 - Place the cursor in the text input box and press enter, or compose your own gremlin awesomeness.
-
-**Notes:** 
-
-- This is a very basic prototype. 
-- There is almost no styling or eye candy yet.
-- The JSON Results are real but the graph display is randomly generated.
-- The session is not yet maintained across calls. Every execution must declare everything it will use (i.e. create a graph before playing w/ it.)
 
 This app uses https://github.com/gulthor/gremlin-client.
